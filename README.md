@@ -11,6 +11,21 @@ and the publication:
 ### Description:
 This notebook uses imageio to feed frames from videos or images from an image sequence into a Fast Style Transfer for Arbitrary Styles model and write the results to a frame in a new video.
 
+### Windows 10 Installation Guide:
+There are many installation guides for tensorflow. I was able to install most of them, but only one method allowed tensorflow to recognize my GPU. So I wanted to provide some information about how I managed to get it working in case it's useful for someone- until this instruction also becomes outdated.
+
+This setup guide ended up being the one that worked for me:
+https://medium.com/analytics-vidhya/tensorflow-2-3-0-with-gpu-support-on-windows-10-f975a552ea7c
+
+CUDA 10.2 did work with tensorflow like the article suggests, but it would not recognize my GPU. So I tried 10.1.
+
+Versions were really tricky to get right, here are versions I used:
+
+* Anaconda3 2020.11 (Python 3.8.5 64-bit)
+* cuda_10.1.243 
+* cudnn 10.1 v7.6.5.32 (This exact version was important)
+* tensorflow 2.3.0 for Python 3.8
+
 ### Example of results 
 
 https://www.instagram.com/p/CEVx4UJhBlS/?utm_source=ig_web_copy_link
